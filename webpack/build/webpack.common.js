@@ -2,17 +2,15 @@ const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 function resolve(dir) {
-  return path.resolve(__dirname, dir)
+  return path.resolve(dir)
 }
 module.exports = {
-  mode: "development",
   entry: {
-    app: "./app.js",
+    app: "./src/main.js",
   },
   output: {
-    // 修改打包后输出的目录
-    // path: resolve('production'),
     filename: "bundle.js",
+    path: resolve("../dist/")
   },
   module: {
     rules: [
@@ -77,6 +75,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./index.html",
-    }),
-  ],
+    })
+  ]
 };
