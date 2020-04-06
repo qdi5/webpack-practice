@@ -1,7 +1,6 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
-const webpack = require('webpack')
 function resolve(dir) {
   return path.resolve(dir)
 }
@@ -76,8 +75,8 @@ module.exports = {
         use: {
           loader: "expose-loader",
           // 将jquery挂载到window.$
-          options: "$",
-        },
+          options: '$',
+        }
       },
     ],
   },
@@ -86,15 +85,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./index.html",
     }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    }),
   ],
-  optimization: {
-    // 去重和分离引入的相同库
-    splitChunks: {
-      chunks: "all"
-    }
-  }
 };

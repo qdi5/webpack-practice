@@ -6,9 +6,7 @@ module.exports = merge(commonConfig, {
   mode: "development",
   // 追踪报错的真正文件
   devtool: "cheap-module-eval-source-map",
-  plugins: [
-    new Webpack.HotModuleReplacementPlugin(),
-  ],
+  plugins: [new Webpack.HotModuleReplacementPlugin()],
   // 配置开发环境的服务器
   devServer: {
     port: 3000,
@@ -16,6 +14,15 @@ module.exports = merge(commonConfig, {
     // 默认使用浏览器打开html文件
     open: true,
     // 开启热模块更新
-    hot: true
-  }
+    hot: true,
+    proxy: {
+      "/api": {
+        target: "http://api.wuzhe.online",
+        changeOrigin: true,
+        pathRewrite: {
+          "^/api": "",
+        },
+      },
+    },
+  },
 });
