@@ -6,12 +6,6 @@ module.exports = merge(commonConfig, {
   mode: "development",
   // 追踪报错的真正文件
   devtool: "cheap-module-eval-source-map",
-  entry: {
-    app: "./src/main.js",
-  },
-  output: {
-    filename: "bundle.js",
-  },
   plugins: [
     new Webpack.HotModuleReplacementPlugin(),
   ],
