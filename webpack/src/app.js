@@ -6,12 +6,14 @@ add();
 export function minus (a, b) {
   return a - b 
 }
-function getComponent() {
-  return import("jquery").then(({default: jq}) => {
-    return jq("<div></div>").html("动态导入库");
-  })
+async function getComponent () {
+  const { default: $ } = await import(/*webpackChunkName:"jquery"*/ "jquery");
+  $("<div></div>").html("动态导入库").appendTo('body');
 }
+getComponent()
 
-getComponent().then(item => {
-  item.appendTo("body").css('background',"red")
+document.addEventListener("click", () => {
+  import(/*webpackPrefetch: true*/ "./prefetch.js").then(({default: func}) => {
+    func()
+  })
 })

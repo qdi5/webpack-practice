@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const webpack = require('webpack')
 function resolve(dir) {
-  return path.resolve(dir)
+  return path.resolve(__dirname, dir)
 }
 module.exports = {
   entry: {
@@ -94,6 +94,7 @@ module.exports = {
   optimization: {
     // 去重和分离引入的相同库
     splitChunks: {
+      // initial分离同步代码，async分离异步代码，all两者都分离
       chunks: "all"
     }
   }
