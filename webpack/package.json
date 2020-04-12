@@ -6,7 +6,8 @@
   "slideEffects": "false",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.dev.js",
-    "build": "webpack --config ./build/webpack.prod.js"
+    "build": "webpack --config ./build/webpack.prod.js",
+    "dll": "webpack --config ./build/webpack.dll.js"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -32,6 +33,8 @@
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "url-loader": "^4.0.0",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.42.1",
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.11",
@@ -39,7 +42,9 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "add-asset-html-webpack-plugin": "^3.1.3",
     "axios": "^0.19.2",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "vue": "^2.6.11"
   }
 }
