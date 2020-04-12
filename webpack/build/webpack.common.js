@@ -2,17 +2,12 @@ const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const webpack = require('webpack')
-function resolve(dir) {
-  return path.resolve(__dirname, dir)
-}
+
 module.exports = {
   entry: {
     app: "./src/main.js",
   },
-  output: {
-    filename: "bundle.js",
-    path: resolve("../dist/"),
-  },
+ 
   module: {
     rules: [
       {
@@ -36,10 +31,6 @@ module.exports = {
             limit: 1024 * 7,
           },
         },
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
         test: /\.scss$/,

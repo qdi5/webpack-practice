@@ -1,4 +1,5 @@
 import './css/main.css'
+import './css/app.css'
 import { add } from './app.js'
 import axios from 'axios'
 import _ from 'lodash'
