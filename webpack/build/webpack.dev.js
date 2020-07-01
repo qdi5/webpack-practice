@@ -11,7 +11,7 @@ module.exports = merge(commonConfig, {
   // 追踪报错的真正文件
   devtool: "cheap-module-eval-source-map",
   module: {
-    rule: [
+    rules: [
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader", "postcss-loader"],
