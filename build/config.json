@@ -1,0 +1,15 @@
+{
+	"PORT": 3030,
+	"PATH": {
+		"PUBLIC_PATH": "/public/"
+	},
+	"DIR": {
+		"DIST": "dist",
+		"VIEW": "views",
+		"STYLE": "css",
+		"SCRIPT": "js",
+		"FONT": "fonts",
+		"IMAGE": "imgs"
+	},
+	"EXT": "ejs"
+}

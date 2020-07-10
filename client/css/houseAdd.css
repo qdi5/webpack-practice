@@ -1,0 +1,209 @@
+.no-selected {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.goods-wrapper > .goods {
+  position: relative;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-size: 0;
+}
+
+.goods-wrapper > .goods > .goods-add-span {
+  font-size: 14px;
+}
+
+.goods-wrapper > .goods:last-child {
+  margin-right: 0;
+}
+
+.goods-wrapper > .goods > .back-up,
+.goods-wrapper > .goods > .goods-name,
+.goods-wrapper > .goods > .number-input {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.goods-wrapper > .goods > .goods-name,
+.goods-wrapper > .goods > .back-up {
+  width: 80px;
+  text-align: center;
+  border: 1px solid #666;
+}
+
+.goods-wrapper > .goods > .goods-name {
+  height: 24px;
+  box-sizing: border-box;
+  border-right: none;
+  overflow: hidden;
+}
+
+.goods-wrapper > .goods > .goods-name.select {
+  height: 24px;
+  box-sizing: border-box;
+}
+
+.goods-wrapper > .goods > .back-up {
+  height: 24px;
+  box-sizing: border-box;	
+  overflow: hidden;
+  border-left: none;
+}
+
+.number-input {
+  width: 86px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #666;
+  color: #666;
+  font-size: 14px;
+}
+
+.number-input > * {
+  float: left;
+}
+
+.number-input .minus,
+.number-input .plus {
+  width: 25px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.number-input .input {
+  width: 36px;
+  height: 22px;
+  line-height: 22px;
+  color: #333;
+  text-align: center;
+  border: none;
+}
+
+.add-text {
+  margin-left: 15px;
+  color: #5a98de;
+}
+
+.choose-tmpl-wrapper > .select {
+  width: 226px;
+  vertical-align: middle;
+}
+
+.remark-add-wrapper {
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.yb-wrapper > .item-row:not(:first-child) {
+  margin-top: 20px;
+}
+.yb-wrapper.item-row .js-error-placement {
+  top: 5px;
+}
+
+.yb-wrapper .item-row {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+.yb-wrapper .btn-item {
+  border: 1px solid #666;
+}
+
+.yb-wrapper .btn-item:not(:last-child) {
+  border-right: none;
+}
+
+.yb-wrapper .btn {
+  cursor: auto;
+}
+
+.yb-wrapper .btn:focus {
+  background: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+}
+
+.add-goods-wrapper {
+  padding: 28px 50px;
+}
+.add-goods-wrapper .goods-add-span {
+	margin-left: 0;
+}
+
+#goodsAdd {
+  padding-top: 30px;
+}
+
+.add-goods .goods-name .tmpl-input {
+  width: 300px;
+  height: 30px;
+  padding: 0 3px;
+  border: 1px solid #666;
+  color: #666;
+}
+
+.opreate-btn > input[type="button"] {
+  width: 74px;
+}
+
+.delete-top-right {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 14px;
+  text-align: center;
+  padding: 0;
+}
+
+.fee-type {
+  width: 70px;
+}
+
+.wrapper {
+  padding-bottom: 35px;
+}
+.haserror {
+	background-color: red;
+	color: #fff!important;
+}
+.remark-content {
+	overflow:hidden;
+}
+#listForm .form-label {
+  padding: 0;
+}
+#jsSaveBtn, 
+#jsApprovalBtn, 
+#jsLastStepBtn  {
+  display: none;
+}

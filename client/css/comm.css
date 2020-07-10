@@ -1,0 +1,93 @@
+@charset 'utf-8';
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.even {
+    background: #EEEEEE;
+}
+.odd {
+    background: #FFFFFF;  
+}
+.tr_hover {
+    background-color: #eafcd5;
+}
+.tr_selected {
+    background-color: #51b2f6;
+}
+table tbody tr {
+	cursor: pointer;
+}
+table tbody tr:hover {
+	background-color: #eafcd5;
+}
+
+/**=== diy list表格 begin===*/
+.list-table-wrapper {
+    width: 100%;
+    padding: 25px 15px;
+    box-sizing: border-box;
+
+}
+.list-table {
+    display: table;
+    width: 100%;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+.list-table .list-row {
+	display: table-row;
+
+}
+.list-table .list-row .list-cell {
+    display: table-cell;
+    height: 100%;
+    text-align: center;
+    /* 垂直居中 */
+    vertical-align: middle;
+    padding: 15px;
+    border-bottom: 1px solid #666;
+}
+.list-table .list-row .list-cell:not(:last-child) {
+    border-right: 1px solid #666;
+   
+}
+.list-table .list-title {
+    text-align: right;
+}
+.list-table .list-content {
+    text-align: left;
+}
+/**=== diy list鍒楄〃 end ===*/
+/* 4列 */
+.width-percent-25 {
+    width: 25%;
+}
+/* 3列 */
+.width-percent-33 {
+    width: 33.333333%;
+}
+/* 2列 */
+.width-percent-50 {
+	width: 50%;
+}
+nav.breadcrumb {
+	line-height: 45px;
+	height: auto;
+}
+.legend {
+	width: auto;
+}
+/* 修复左侧收起箭头，挡住主内容区的样式问题 */
+body .page-container {
+    padding: 20px;
+}
+ input[disabled='true'],
+ input[disabled='disabled'] {
+ 	background: #666!important;
+ 	opacity: 0.8!important;
+ 	cursor: wait;
+ }
